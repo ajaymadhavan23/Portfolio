@@ -1,0 +1,142 @@
+.connect-section {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--bg-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    position: relative;
+  }
+  
+  .connect-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    animation: fadeInUp 0.7s ease;
+  }
+  
+  .connect-header {
+    text-align: center;
+    margin-bottom: 55px;
+  }
+  
+  .connect-intro {
+    font-size: 1.13rem;
+    color: var(--text-secondary);
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .connect-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 40px;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .card {
+    background: var(--card-bg);
+    border-radius: 18px;
+    box-shadow: 0 8px 28px rgba(99, 102, 241, 0.13);
+    border: 1.5px solid var(--border-color);
+    padding: 38px 36px;
+    transition: box-shadow 0.3s;
+  }
+  
+  .card h3 {
+    color: var(--primary-color);
+    font-size: 1.28rem;
+    margin-bottom: 23px;
+    font-weight: 700;
+  }
+  
+  .connect-info p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 9px;
+  }
+  
+  .connect-info a {
+    color: var(--accent-color);
+    transition: color 0.25s;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .connect-info a:hover { color: var(--secondary-color); }
+  
+  .connect-links {
+    margin-top: 19px;
+    display: flex;
+    gap: 17px;
+  }
+  
+  .connect-social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-primary);
+    background: rgba(139,92,246,0.13);
+    border-radius: 10px;
+    padding: 8px 15px;
+    font-weight: 600;
+    transition: background 0.25s, color 0.25s;
+  }
+  .connect-social.linkedin { color: #0e76a8; }
+  .connect-social.github { color: #fff; }
+  .connect-social:hover { background: var(--gradient-2); color: #fff; }
+  
+  .connect-form label {
+    display: block;
+    font-size: 0.98rem;
+    color: var(--text-muted);
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .connect-form input,
+  .connect-form textarea {
+    width: 100%;
+    padding: 13px 15px;
+    margin-bottom: 21px;
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background: var(--bg-light);
+    color: var(--text-primary);
+    transition: border 0.3s;
+  }
+  
+  .connect-form input:focus,
+  .connect-form textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+  }
+  
+  .connect-form button {
+    width: 100%;
+    margin-top: 8px;
+  }
+  
+  .form-success {
+    margin-top: 18px;
+    color: var(--primary-color);
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  @media (max-width: 900px) {
+    .connect-layout {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  }
+  
+  @media (max-width: 540px) {
+    .connect-section { padding: 38px 8px; }
+    .card { padding: 25px 10px; }
+    .connect-header { margin-bottom: 30px; }
+  }
+  
